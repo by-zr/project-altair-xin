@@ -1,20 +1,41 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer } from "@react-navigation/native";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
+import LoginScreen from "./app/screens/LoginScreen";
+import SignUpScreen from "./app/screens/SignUpScreen";
+import EmailSignUpScreen from './app/screens/EmailSignUpScreen';
+import KnowAboutScreen from './app/screens/KnowAboutScreen';
+import OthersScreen from './app/screens/OthersScreen';
+import HomeScreen from './app/screens/HomeScreen';
+import PostScreen from './app/screens/PostScreen';
+import CommunityScreen from './app/screens/CommunityScreen';
 
-export default function App() {
+
+const Stack = createStackNavigator();
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{headerShown: false}} >        
+        <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
+        <Stack.Screen name="LoginScreen" component={LoginScreen} />
+        <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
+        <Stack.Screen name="EmailSignUpScreen" component={EmailSignUpScreen} />
+        <Stack.Screen name="KnowAboutScreen" component={KnowAboutScreen} />
+        <Stack.Screen name="OthersScreen" component={OthersScreen} />
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen name="PostScreen" component={PostScreen} />
+        <Stack.Screen name="CommunityScreen" component={CommunityScreen} />
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default App;
+  // console.log("App executed"); // change later
+  //return <WelcomeScreen />;
+
+
