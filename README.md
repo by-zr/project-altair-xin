@@ -19,6 +19,14 @@ A React Native mobile application focused on mental wellness, community support,
 - **Category**: Mental Wellness & Community App
 - **Recognition**: Outstanding innovation in mental health technology
 
+## 📋 Presentation Materials
+
+### Pitching & Final Presentations
+- **[Pitching Presentation](xin-pitching-presentation.pdf)** - Initial project pitch and concept presentation
+- **[Final Presentation](xin-final-presentation.pdf)** - Complete project showcase and winning presentation
+
+*These presentations demonstrate our comprehensive approach to mental wellness innovation and the journey that led to our 1st place victory.*
+
 ## 🌟 Features
 
 ### Core Functionality
